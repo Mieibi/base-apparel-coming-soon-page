@@ -39,13 +39,12 @@ function validation(e){
     //Test of Validation 
     if (Test){
         mail.style.display = "none";
-        email.value = ""
+        email.value = "";
     }else{
         mail.style.display = "block";
         email.style.textAlign = "left";
-        
+        email.style.borderColor = "hsl(0, 93%, 68%)";
     }
-
     //clear email input
     
     

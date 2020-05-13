@@ -48,9 +48,9 @@ a {
   white-space: nowrap;
   overflow: hidden;
   font-weight: 300;
-  background-image:url('images/icon-error.svg');
+  /* background-image:url('images/icon-error.svg');
     background-repeat:no-repeat;
-    background-position:right;
+    background-position:right; */
     /* padding-left:10px; */
 }
 .email-input[type="text"]::placeholder {
@@ -127,6 +127,11 @@ footer {
     right: 5px;
   }
 }
+@media screen and (width:414px) and (orientation:portrait),(width:411px){
+    .warning{
+        padding-left: 60px;
+    }
+}
 @media screen and (width: 768px) and (orientation: portrait) {
   .logo {
     display: block;
@@ -162,6 +167,9 @@ footer {
     padding: 11px 5px 10px;
     right: 210px;
   }
+  .warning{
+    padding-left: 240px ;
+  }
 }
 @media screen and (width: 1024px) and (orientation: portrait) {
   .logo {
@@ -194,6 +202,9 @@ footer {
     padding: 11px 5px;
     right: 340px;
   }
+  .warning{
+    padding-left: 370px ;
+  }
 }
 
 @media screen and (min-width: 610px) and (orientation: landscape) {
@@ -219,7 +230,7 @@ footer {
   .info-text {
     padding-left: 40px;
     padding-right: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     margin-top: 15px;
   }
   .info-section {
@@ -229,7 +240,6 @@ footer {
   }
   .info-form {
     padding-left: 25px;
-    padding-bottom: 15px;
   }
   .email-input {
     padding-left: 15px;
@@ -239,12 +249,24 @@ footer {
     right: 60px;
     text-align: center;
   }
+  .warning{
+    padding-left: 50px;
+    padding-top: 5px;
+  }
   footer {
     clear: both;
   }
   .attribution {
     text-align: center;
   }
+}
+@media screen and (width:568px) and (orientation:landscape){
+    .warning{
+        text-align: center;
+    }
+    .btn{
+        right:100px;
+    }
 }
 @media screen and (width: 640px) and (orientation: landscape) {
   .btn {
@@ -300,6 +322,9 @@ footer {
   .btn {
     right: 190px;
   }
+  .warning{
+    padding-left: 110px;
+  }
 }
 @media screen and (min-width: 1185px) {
   .logo {
@@ -335,6 +360,10 @@ footer {
     padding: 11px 5px 10px;
     right: 180px;
   }
+  .warning{
+    padding-left: 200px;
+    
+  }
 }
 @media screen and (min-width:1185px) and (max-width:1199px){
     .email-input{
@@ -361,5 +390,8 @@ footer {
   }
   .btn {
     right: 200px;
+  }
+  .warning{
+    padding-left: 110px;
   }
 }
