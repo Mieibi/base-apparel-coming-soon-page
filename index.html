@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -12,21 +17,20 @@
       href="./images/favicon-32x32.png"
     />
 
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+
     <title>Frontend Mentor | Base Apparel coming soon page</title>
   </head>
   <body>
-    <section class="top-bar">
-      <span class="logo">
-        <img src="images/logo.svg" alt="logo" />
-      </span>
-    </section>
     <section class="info">
-      <div class="hero-img">
-        <picture>
-          <source media="(max-width:767px)" srcset="images/hero-mobile.jpg" />
-          <img src="images/hero-desktop.jpg" alt="hero-img" />
-        </picture>
-      </div>
+      <img class="logo" src="images/logo.svg" alt="logo" />
+
+      <picture>
+        <source media="(max-width:400px)" srcset="images/hero-mobile.jpg" />
+        <img class="hero-img" src="images/hero-desktop.jpg" alt="hero-img" />
+      </picture>
+
       <div class="info-section">
         <h1 class="info-header"><span class="spec">We're </span>coming soon</h1>
         <p class="info-text">
@@ -34,22 +38,23 @@
           Add your email below to stay up-to-date with announcements and our
           launch deals.
         </p>
-        <form class="email-form">
-          <input type="email" placeholder="Email Address" />
-          <span class="btn">
-            <a href="#" class="btn-link">
-              <img src="images/icon-arrow.svg" alt="arrow" />
-            </a>
-          </span>
+        <form class="info-form">
+          <input class="email-input" type="email" placeholder="Email Address" />
+          <a href="#" class="btn-link">
+            <span class="btn">
+              <img class="arrow" src="images/icon-arrow.svg" alt="arrow" />
+            </span>
+          </a>
         </form>
       </div>
     </section>
+
     <footer>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#">Omieibi Amapakabo</a>.
       </p>
     </footer>
   </body>
