@@ -39,6 +39,7 @@ function validation(e){
     //Test of Validation 
     if (Test){
         mail.style.display = "none";
+        email.style.borderColor = "hsl(0, 36%, 70%)";
         email.value = "";
     }else{
         mail.style.display = "block";
