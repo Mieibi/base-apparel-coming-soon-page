@@ -365,7 +365,7 @@ footer {
     
   }
 }
-@media screen and (min-width:1185px) and (max-width:1199px){
+@media screen and (min-width:1185px) and (max-width:1438px){
     .email-input{
         width: 160px;
     }
