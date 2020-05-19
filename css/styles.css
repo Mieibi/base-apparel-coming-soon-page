@@ -48,10 +48,6 @@ a {
   white-space: nowrap;
   overflow: hidden;
   font-weight: 300;
-  /* background-image:url('images/icon-error.svg');
-    background-repeat:no-repeat;
-    background-position:right; */
-    /* padding-left:10px; */
 }
 .email-input[type="text"]::placeholder {
   text-align: left;
@@ -65,6 +61,11 @@ a {
   outline: none;
   font-weight: 300;
 }
+.error{
+  display: none;
+  position: absolute;
+  top: 9.5px;
+}
 .btn {
   display: inline-block;
   width: 3.438rem;
@@ -72,6 +73,7 @@ a {
   background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   position: absolute;
   box-shadow: 5px 10px 10px hsl(0, 64%, 89%);
+
 }
 .btn:active {
   transform: translateX(10px);
@@ -109,7 +111,10 @@ footer {
   .email-input {
     width: 12.5rem;
   }
-  .btn {
+  .error{
+    right: 75px;
+  }
+  .btn { 
     padding: 11px 5px;
     right: 7px;
   }
@@ -163,6 +168,9 @@ footer {
     margin-right: auto;
     margin-left: auto;
   }
+  .error{
+    right: 280px;
+  }
   .btn {
     padding: 11px 5px 10px;
     right: 210px;
@@ -197,6 +205,9 @@ footer {
     width: 50%;
     margin-right: auto;
     margin-left: auto;
+  }
+  .error{
+    right: 410px;
   }
   .btn {
     padding: 11px 5px;
@@ -244,6 +255,9 @@ footer {
   .email-input {
     padding-left: 15px;
   }
+  .error{
+    right: 125px;
+  }
   .btn {
     padding: 11px 5px 9px;
     right: 60px;
@@ -264,6 +278,9 @@ footer {
     .warning{
         text-align: center;
     }
+    .error{
+      right: 170px;
+    }
     .btn{
         right:100px;
     }
@@ -283,6 +300,9 @@ footer {
   .info-header {
     padding-top: 30px;
   }
+  .error{
+    right: 150px;
+  }
   .btn {
     right: 80px;
   }
@@ -298,6 +318,12 @@ footer {
   }
   .info-header {
     padding-top: 50px;
+  }
+  .error{
+    right: 200px;
+  }
+  .btn{
+    right: 130px;
   }
 }
 @media screen and (min-width: 1024px) and (orientation: landscape) {
@@ -319,6 +345,9 @@ footer {
     margin-left: 90px;
     padding: 0;
   }
+  .error{
+    right: 260px;
+  }
   .btn {
     right: 190px;
   }
@@ -332,7 +361,7 @@ footer {
     padding-left: 40px;
   }
   .hero-img {
-    width: 41.8%;
+    width: 42.2%;
   }
   .info-header {
     margin-left: 140px;
@@ -388,6 +417,13 @@ footer {
   .info-form {
     margin-left: 100px;
   }
+  .email-input{
+    width: 300px;
+  }
+  .error{
+    right: 270px;
+  }
+  
   .btn {
     right: 200px;
   }

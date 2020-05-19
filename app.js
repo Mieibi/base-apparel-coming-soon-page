@@ -1,5 +1,5 @@
 //UI VARIABLES
-const btn = document.querySelector(".btn");
+const btn = document.querySelector(".btn-link");
 
 //Load event Listeners
 eventLoader();
@@ -18,6 +18,9 @@ function validation(e){
     
     //targeting warning text
     const mail = document.querySelector(".warning");
+
+    //targeting warning sign
+    const sign = document.querySelector(".error")
 
     //targeting email input
     const email = document.querySelector(".email-input");
@@ -39,10 +42,12 @@ function validation(e){
     //Test of Validation 
     if (Test){
         mail.style.display = "none";
+        sign.style.display = "none";
         email.style.borderColor = "hsl(0, 36%, 70%)";
         email.value = "";
     }else{
         mail.style.display = "block";
+        sign.style.display = "inline";
         email.style.textAlign = "left";
         email.style.borderColor = "hsl(0, 93%, 68%)";
     }
